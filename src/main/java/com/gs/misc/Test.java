@@ -3,10 +3,9 @@ package com.gs.misc;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 
-import org.apache.http.client.ClientProtocolException;
 
 public class Test {
-	public static void main(String[] args) throws ClientProtocolException, IOException, ClassNotFoundException {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		/*ByteArrayOutputStream b = new ByteArrayOutputStream(10);
 		ObjectOutput out = new ObjectOutputStream(b);
 		SingletonClass ss = SingletonClass.getInstance();
