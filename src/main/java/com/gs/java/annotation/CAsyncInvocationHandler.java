@@ -1,4 +1,4 @@
-package com.gs.annotation;
+package com.gs.java.annotation;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

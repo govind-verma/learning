@@ -1,4 +1,4 @@
-package com.gs.annotation;
+package com.gs.java.annotation;
 
 public interface ICAsyncTest {
 	public void t();
