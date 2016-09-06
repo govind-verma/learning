@@ -1,4 +1,4 @@
-package com.gs.ds.spring;
+package com.gs.java.spring;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
