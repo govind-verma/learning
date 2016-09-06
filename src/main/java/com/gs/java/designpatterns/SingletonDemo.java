@@ -1,4 +1,4 @@
-package com.ds.java.designpatterns;
+package com.gs.java.designpatterns;
 
 import com.gs.ds.designpatterns.singleton.EnumSingleton;
 
