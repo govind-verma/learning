@@ -1,36 +1,44 @@
 package com.gs.java.multithreading;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 public class Main {
 	public static void main(String[] args) throws InterruptedException {
 
-		RunnableData d = new RunnableData("start");
-		//
-		// Thread t1 = new Thread(new RunnableReadTask(d));
-		// Thread t2 = new Thread(new RunnableWriteTask(d));
-		//
-		// t2.start();
-		// t1.start();
-		CounterThreadData counterThreadData = new CounterThreadData(1);
+		/*
+		 * RunnableData d = new RunnableData("start"); CounterThreadData
+		 * counterThreadData = new CounterThreadData(1);
+		 * 
+		 * Thread t1 = new Thread(new CounterThread(counterThreadData, 1));
+		 * Thread t2 = new Thread(new CounterThread(counterThreadData, 2));
+		 * Thread t3 = new Thread(new CounterThread(counterThreadData, 3));
+		 * 
+		 * t3.start(); t1.start(); t2.start();
+		 */
+		CDataSeq c = new CDataSeq();
 
-		Thread t1 = new Thread(new CounterThread(counterThreadData, 1));
-		Thread t2 = new Thread(new CounterThread(counterThreadData, 2));
-		Thread t3 = new Thread(new CounterThread(counterThreadData, 3));
+		Thread c1 = new Thread(new SecquencCounterThread(c));
+		Thread c2 = new Thread(new SecquencCounterThread(c));
+		Thread c3 = new Thread(new SecquencCounterThread(c));
+		c2.start();
+		c1.start();
 
-		t3.start();
-		t1.start();
-		t2.start();
+		c3.start();
 
 	}
 }
 
-class CounterThreadData {
+abstract class A {
+	public A(int a) {
+
+	}
+}
+
+class CounterThreadData extends A {
 	private int data;
 
 	public CounterThreadData(int data) {
+		super(data);
 		this.data = data;
 	}
 

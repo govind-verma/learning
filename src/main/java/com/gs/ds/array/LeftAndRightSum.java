@@ -2,8 +2,8 @@ package com.gs.ds.array;
 
 public class LeftAndRightSum {
 	public static void main(String[] args) {
-		int arr[] = {6, -2, 3, 2, 3};
-		System.out.println(divideArray(arr));
+		int arr1[] = {1, 3, 4, 5};
+		System.out.println(findSmallest(arr1, arr1.length));
 	}
 
 	private static boolean divideArray(int a[]) {
@@ -32,5 +32,18 @@ public class LeftAndRightSum {
 		}
 
 		return false;
+	}
+	
+	static int  findSmallest(int arr[], int n)
+	{	
+		//int arr1[] = {1,2, 3, 4};
+	   int res = 1; // Initialize result
+	 
+	   // Traverse the array and increment 'res' if arr[i] is
+	   // smaller than or equal to 'res'.
+	   for (int i = 0; i < n && arr[i] <= res; i++)
+	       res = res + arr[i];
+	 
+	   return res;
 	}
 }

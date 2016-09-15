@@ -5,11 +5,12 @@ public class Main {
 		int a = 4;
 		int b = 4;
 		//System.out.println(b - (((b - a) >> 31) & 0x1) * (b-a));
-		/*towerOfHinoi(6, "A", "C", "B");*/
-		Queue q = new Queue();
-		for(int i =0; i < 13; i++) {
-			q.enqueue(new Integer(i));
-		}
+		/*towerOfHinoi(16, "A", "C", "B");*/
+		//
+		Integer i = Integer.valueOf("189");
+		Integer j = Integer.valueOf("189");
+		
+		System.out.println(i != j);
 		
 	}
 	
