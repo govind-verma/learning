@@ -1,4 +1,4 @@
-package com.gs.ds.designpatterns.singleton;
+package com.gs.java.designpatterns.singleton;
 
 /**
  * If single threaded application. Which is not possible :)

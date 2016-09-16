@@ -1,6 +1,6 @@
 package com.gs.java.designpatterns;
 
-import com.gs.ds.designpatterns.singleton.EnumSingleton;
+import com.gs.java.designpatterns.singleton.EnumSingleton;
 
 public class SingletonDemo {
 	public static void main(String[] args) {

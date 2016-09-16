@@ -1,4 +1,4 @@
-package com.gs.ds.designpatterns.singleton;
+package com.gs.java.designpatterns.singleton;
 /**
  * This is best way to create Singleton
  * @author govinda.verma

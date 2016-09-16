@@ -1,4 +1,4 @@
-package com.gs.ds.designpatterns.singleton;
+package com.gs.java.designpatterns.singleton;
 
 public enum EnumSingleton {
 	INSTANCE;
